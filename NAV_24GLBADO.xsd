@@ -1,0 +1,2653 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:meta="https://api.nav.gov.hu/definitions/form_xsd_metaschema/1.0"
+        xmlns:tns="https://soap.api.nav.gov.hu/definitions/model/2.0/24GLBADO/6.0"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        targetNamespace="https://soap.api.nav.gov.hu/definitions/model/2.0/24GLBADO/6.0">
+   <import namespace="https://api.nav.gov.hu/definitions/form_xsd_metaschema/1.0"
+           schemaLocation="form_xsd_metaschema.xsd"/>
+   <element name="Doc_24GLBADO"
+            type="tns:Doc_24GLBADO_Type"
+            meta:metaType="DocMetaType">
+      <annotation>
+         <documentation>Bevallás a 2024. évi kiegészítő adókról és az elismert belföldi kiegészítőadó-előlegről a Magyarországon illetőséggel rendelkező adóalanyok részére / Tax return on the qualified minimum domestic top-up tax advance payment of FY2024 for domestic constituent entites or for the designated local entity acting on behalf of the domestic constituent entities</documentation>
+      </annotation>
+   </element>
+   <simpleType name="Enum_24GLBADO_0A0001D007A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="1"/>
+         <enumeration value="2"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_24GLBADO_0A0001D006A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="H"/>
+         <enumeration value="O"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_24GLBADO_0A0001D008A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="1"/>
+         <enumeration value="2"/>
+         <enumeration value="3"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_24GLBADO_29927">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="HUF"/>
+         <enumeration value="EUR"/>
+         <enumeration value="USD"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_24GLBADO_29928">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="1"/>
+         <enumeration value="2"/>
+         <enumeration value="3"/>
+         <enumeration value="4"/>
+         <enumeration value="5"/>
+         <enumeration value="6"/>
+         <enumeration value="7"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_24GLBADO_0A0001D00505A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="1"/>
+         <enumeration value="2"/>
+         <enumeration value="3"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_24GLBADO_0DXXXXC0001DA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="HUF"/>
+         <enumeration value="EUR"/>
+         <enumeration value="USD"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_24GLBADO_0DXXXXC0001EA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="1"/>
+         <enumeration value="2"/>
+         <enumeration value="3"/>
+         <enumeration value="4"/>
+         <enumeration value="5"/>
+         <enumeration value="6"/>
+         <enumeration value="7"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_24GLBADO_0DXXXXC0005DA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="HUF"/>
+         <enumeration value="EUR"/>
+         <enumeration value="USD"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_24GLBADO_0DXXXXC0005EA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="1"/>
+         <enumeration value="2"/>
+         <enumeration value="3"/>
+         <enumeration value="4"/>
+         <enumeration value="5"/>
+         <enumeration value="6"/>
+         <enumeration value="7"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_24GLBADO_0DXXXXC0004DA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="HUF"/>
+         <enumeration value="EUR"/>
+         <enumeration value="USD"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_24GLBADO_0DXXXXC0004EA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="1"/>
+         <enumeration value="2"/>
+         <enumeration value="3"/>
+         <enumeration value="4"/>
+         <enumeration value="5"/>
+         <enumeration value="6"/>
+         <enumeration value="7"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_24GLBADO_0DXXXXC0003DA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="HUF"/>
+         <enumeration value="EUR"/>
+         <enumeration value="USD"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_24GLBADO_0DXXXXC0003EA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="1"/>
+         <enumeration value="2"/>
+         <enumeration value="3"/>
+         <enumeration value="4"/>
+         <enumeration value="5"/>
+         <enumeration value="6"/>
+         <enumeration value="7"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_24GLBADO_0DXXXXC0002DA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="HUF"/>
+         <enumeration value="EUR"/>
+         <enumeration value="USD"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_24GLBADO_0DXXXXC0002EA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="1"/>
+         <enumeration value="2"/>
+         <enumeration value="3"/>
+         <enumeration value="4"/>
+         <enumeration value="5"/>
+         <enumeration value="6"/>
+         <enumeration value="7"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_24GLBADO_0DXXXXC0006DA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="HUF"/>
+         <enumeration value="EUR"/>
+         <enumeration value="USD"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_24GLBADO_0DXXXXC0006EA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="1"/>
+         <enumeration value="2"/>
+         <enumeration value="3"/>
+         <enumeration value="4"/>
+         <enumeration value="5"/>
+         <enumeration value="6"/>
+         <enumeration value="7"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_24GLBADO_0F0001C50337A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="1"/>
+         <enumeration value="2"/>
+         <enumeration value="3"/>
+         <enumeration value="4"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_24GLBADO_0F0001C50420A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="1"/>
+         <enumeration value="2"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_24GLBADO_0HXXXXC50484A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="X"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_24GLBADO_0HXXXXC50488A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="1"/>
+         <enumeration value="2"/>
+         <enumeration value="3"/>
+         <enumeration value="4"/>
+         <enumeration value="5"/>
+         <enumeration value="6"/>
+         <enumeration value="7"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_24GLBADO_0IXXXXD50491A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="HUF"/>
+         <enumeration value="EUR"/>
+         <enumeration value="USD"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_24GLBADO_0IXXXXD50498A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="HUF"/>
+         <enumeration value="EUR"/>
+         <enumeration value="USD"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_24GLBADO_0IXXXXD50482A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="1"/>
+         <enumeration value="2"/>
+         <enumeration value="3"/>
+         <enumeration value="4"/>
+         <enumeration value="5"/>
+         <enumeration value="6"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_24GLBADO_0IXXXXD50483A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="1"/>
+         <enumeration value="2"/>
+         <enumeration value="3"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_24GLBADO_0IXXXXC50481A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="X"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_24GLBADO_0JXXXXC50442A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="HUF"/>
+         <enumeration value="EUR"/>
+         <enumeration value="USD"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_24GLBADO_0JXXXXC50454A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="1"/>
+         <enumeration value="2"/>
+         <enumeration value="3"/>
+         <enumeration value="4"/>
+         <enumeration value="5"/>
+         <enumeration value="6"/>
+         <enumeration value="7"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_24GLBADO_0JXXXXC50430A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="1"/>
+         <enumeration value="2"/>
+         <enumeration value="3"/>
+      </restriction>
+   </simpleType>
+   <complexType name="Doc_24GLBADO_Type">
+      <annotation>
+         <documentation>A teljes bizonylat szerkezetet leíró típus</documentation>
+      </annotation>
+      <sequence>
+         <element name="Form_24GLBADO"
+                  type="tns:Form_24GLBADO_Type"
+                  minOccurs="1"
+                  maxOccurs="1"
+                  meta:metaType="FormMetaType">
+            <annotation>
+               <documentation>24GLBADO részbizonylat</documentation>
+            </annotation>
+         </element>
+      </sequence>
+   </complexType>
+   <simpleType name="Enum_24GLBADO_GLBADO_deviza_1">
+      <annotation>
+         <documentation>Enum értékek GLBADO_deviza mátrix 1. oszlopból.</documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="AED"/>
+         <enumeration value="AFN"/>
+         <enumeration value="ALL"/>
+         <enumeration value="AMD"/>
+         <enumeration value="ANG"/>
+         <enumeration value="AOA"/>
+         <enumeration value="ARS"/>
+         <enumeration value="ATS"/>
+         <enumeration value="AUD"/>
+         <enumeration value="AWG"/>
+         <enumeration value="AZN"/>
+         <enumeration value="BAM"/>
+         <enumeration value="BBD"/>
+         <enumeration value="BDT"/>
+         <enumeration value="BEF"/>
+         <enumeration value="BGN"/>
+         <enumeration value="BHD"/>
+         <enumeration value="BIF"/>
+         <enumeration value="BMD"/>
+         <enumeration value="BND"/>
+         <enumeration value="BOB"/>
+         <enumeration value="BOV"/>
+         <enumeration value="BRL"/>
+         <enumeration value="BSD"/>
+         <enumeration value="BTN"/>
+         <enumeration value="BWP"/>
+         <enumeration value="BYN"/>
+         <enumeration value="BZD"/>
+         <enumeration value="CAD"/>
+         <enumeration value="CDF"/>
+         <enumeration value="CHE"/>
+         <enumeration value="CHF"/>
+         <enumeration value="CHW"/>
+         <enumeration value="CLF"/>
+         <enumeration value="CLP"/>
+         <enumeration value="CNY"/>
+         <enumeration value="COP"/>
+         <enumeration value="COU"/>
+         <enumeration value="CRC"/>
+         <enumeration value="CUC"/>
+         <enumeration value="CUP"/>
+         <enumeration value="CVE"/>
+         <enumeration value="CYP"/>
+         <enumeration value="CZK"/>
+         <enumeration value="DEM"/>
+         <enumeration value="DJF"/>
+         <enumeration value="DKK"/>
+         <enumeration value="DOP"/>
+         <enumeration value="DZD"/>
+         <enumeration value="EEK"/>
+         <enumeration value="EGP"/>
+         <enumeration value="ERN"/>
+         <enumeration value="ESP"/>
+         <enumeration value="ETB"/>
+         <enumeration value="EUR"/>
+         <enumeration value="FIM"/>
+         <enumeration value="FJD"/>
+         <enumeration value="FKP"/>
+         <enumeration value="FRF"/>
+         <enumeration value="GBP"/>
+         <enumeration value="GEL"/>
+         <enumeration value="GGP"/>
+         <enumeration value="GHS"/>
+         <enumeration value="GIP"/>
+         <enumeration value="GMD"/>
+         <enumeration value="GNF"/>
+         <enumeration value="GRD"/>
+         <enumeration value="GTQ"/>
+         <enumeration value="GYD"/>
+         <enumeration value="HKD"/>
+         <enumeration value="HNL"/>
+         <enumeration value="HRK"/>
+         <enumeration value="HTG"/>
+         <enumeration value="HUF"/>
+         <enumeration value="IDR"/>
+         <enumeration value="IEP"/>
+         <enumeration value="ILS"/>
+         <enumeration value="IMP"/>
+         <enumeration value="INR"/>
+         <enumeration value="IQD"/>
+         <enumeration value="IRR"/>
+         <enumeration value="ISK"/>
+         <enumeration value="ITL"/>
+         <enumeration value="JEP"/>
+         <enumeration value="JMD"/>
+         <enumeration value="JOD"/>
+         <enumeration value="JPY"/>
+         <enumeration value="KES"/>
+         <enumeration value="KGS"/>
+         <enumeration value="KHR"/>
+         <enumeration value="KMF"/>
+         <enumeration value="KPW"/>
+         <enumeration value="KRI"/>
+         <enumeration value="KRW"/>
+         <enumeration value="KWD"/>
+         <enumeration value="KYD"/>
+         <enumeration value="KZT"/>
+         <enumeration value="LAK"/>
+         <enumeration value="LBP"/>
+         <enumeration value="LKR"/>
+         <enumeration value="LRD"/>
+         <enumeration value="LSL"/>
+         <enumeration value="LTL"/>
+         <enumeration value="LUF"/>
+         <enumeration value="LVL"/>
+         <enumeration value="LYD"/>
+         <enumeration value="MAD"/>
+         <enumeration value="MDL"/>
+         <enumeration value="MGA"/>
+         <enumeration value="MKD"/>
+         <enumeration value="MMK"/>
+         <enumeration value="MNT"/>
+         <enumeration value="MOP"/>
+         <enumeration value="MRO"/>
+         <enumeration value="MTL"/>
+         <enumeration value="MUR"/>
+         <enumeration value="MVR"/>
+         <enumeration value="MWK"/>
+         <enumeration value="MXN"/>
+         <enumeration value="MXV"/>
+         <enumeration value="MYR"/>
+         <enumeration value="MZN"/>
+         <enumeration value="NAD"/>
+         <enumeration value="NGN"/>
+         <enumeration value="NIO"/>
+         <enumeration value="NLG"/>
+         <enumeration value="NOK"/>
+         <enumeration value="NPR"/>
+         <enumeration value="NZD"/>
+         <enumeration value="OMR"/>
+         <enumeration value="PAB"/>
+         <enumeration value="PEN"/>
+         <enumeration value="PGK"/>
+         <enumeration value="PHP"/>
+         <enumeration value="PKR"/>
+         <enumeration value="PLN"/>
+         <enumeration value="PRB"/>
+         <enumeration value="PTE"/>
+         <enumeration value="PYG"/>
+         <enumeration value="QAR"/>
+         <enumeration value="RON"/>
+         <enumeration value="RSD"/>
+         <enumeration value="RUB"/>
+         <enumeration value="RWF"/>
+         <enumeration value="SAR"/>
+         <enumeration value="SBD"/>
+         <enumeration value="SCR"/>
+         <enumeration value="SDG"/>
+         <enumeration value="SEK"/>
+         <enumeration value="SGD"/>
+         <enumeration value="SHP"/>
+         <enumeration value="SIT"/>
+         <enumeration value="SKK"/>
+         <enumeration value="SLL"/>
+         <enumeration value="SLS"/>
+         <enumeration value="SOS"/>
+         <enumeration value="SRD"/>
+         <enumeration value="SSP"/>
+         <enumeration value="STN"/>
+         <enumeration value="SYP"/>
+         <enumeration value="SZL"/>
+         <enumeration value="THB"/>
+         <enumeration value="TJS"/>
+         <enumeration value="TMT"/>
+         <enumeration value="TND"/>
+         <enumeration value="TOP"/>
+         <enumeration value="TRY"/>
+         <enumeration value="TTD"/>
+         <enumeration value="TVD"/>
+         <enumeration value="TWD"/>
+         <enumeration value="TZS"/>
+         <enumeration value="UAH"/>
+         <enumeration value="UGX"/>
+         <enumeration value="USD"/>
+         <enumeration value="USN"/>
+         <enumeration value="USS"/>
+         <enumeration value="UYI"/>
+         <enumeration value="UYU"/>
+         <enumeration value="UZS"/>
+         <enumeration value="VEF"/>
+         <enumeration value="VND"/>
+         <enumeration value="VUV"/>
+         <enumeration value="WST"/>
+         <enumeration value="XAF"/>
+         <enumeration value="XAG"/>
+         <enumeration value="XAU"/>
+         <enumeration value="XBA"/>
+         <enumeration value="XBB"/>
+         <enumeration value="XBC"/>
+         <enumeration value="XBD"/>
+         <enumeration value="XCD"/>
+         <enumeration value="XDR"/>
+         <enumeration value="XFU"/>
+         <enumeration value="XOF"/>
+         <enumeration value="XPD"/>
+         <enumeration value="XPF"/>
+         <enumeration value="XPT"/>
+         <enumeration value="XTS"/>
+         <enumeration value="XXX"/>
+         <enumeration value="YER"/>
+         <enumeration value="ZAR"/>
+         <enumeration value="ZMW"/>
+         <enumeration value="ZWL"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_24GLBADO_GLOBE_1">
+      <annotation>
+         <documentation>Enum értékek GLOBE mátrix 1. oszlopból.</documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="AD"/>
+         <enumeration value="AE"/>
+         <enumeration value="AF"/>
+         <enumeration value="AG"/>
+         <enumeration value="AI"/>
+         <enumeration value="AL"/>
+         <enumeration value="AM"/>
+         <enumeration value="AO"/>
+         <enumeration value="AQ"/>
+         <enumeration value="AR"/>
+         <enumeration value="AS"/>
+         <enumeration value="AT"/>
+         <enumeration value="AU"/>
+         <enumeration value="AW"/>
+         <enumeration value="AX"/>
+         <enumeration value="AZ"/>
+         <enumeration value="BA"/>
+         <enumeration value="BB"/>
+         <enumeration value="BD"/>
+         <enumeration value="BE"/>
+         <enumeration value="BF"/>
+         <enumeration value="BG"/>
+         <enumeration value="BH"/>
+         <enumeration value="BI"/>
+         <enumeration value="BJ"/>
+         <enumeration value="BL"/>
+         <enumeration value="BM"/>
+         <enumeration value="BN"/>
+         <enumeration value="BO"/>
+         <enumeration value="BQ"/>
+         <enumeration value="BR"/>
+         <enumeration value="BS"/>
+         <enumeration value="BT"/>
+         <enumeration value="BV"/>
+         <enumeration value="BW"/>
+         <enumeration value="BY"/>
+         <enumeration value="BZ"/>
+         <enumeration value="CA"/>
+         <enumeration value="CC"/>
+         <enumeration value="CD"/>
+         <enumeration value="CF"/>
+         <enumeration value="CG"/>
+         <enumeration value="CH"/>
+         <enumeration value="CI"/>
+         <enumeration value="CK"/>
+         <enumeration value="CL"/>
+         <enumeration value="CM"/>
+         <enumeration value="CN"/>
+         <enumeration value="CO"/>
+         <enumeration value="CR"/>
+         <enumeration value="CU"/>
+         <enumeration value="CV"/>
+         <enumeration value="CW"/>
+         <enumeration value="CX"/>
+         <enumeration value="CY"/>
+         <enumeration value="CZ"/>
+         <enumeration value="DE"/>
+         <enumeration value="DJ"/>
+         <enumeration value="DK"/>
+         <enumeration value="DM"/>
+         <enumeration value="DO"/>
+         <enumeration value="DZ"/>
+         <enumeration value="EC"/>
+         <enumeration value="EE"/>
+         <enumeration value="EG"/>
+         <enumeration value="EH"/>
+         <enumeration value="ER"/>
+         <enumeration value="ES"/>
+         <enumeration value="ET"/>
+         <enumeration value="FI"/>
+         <enumeration value="FJ"/>
+         <enumeration value="FK"/>
+         <enumeration value="FM"/>
+         <enumeration value="FO"/>
+         <enumeration value="FR"/>
+         <enumeration value="FX"/>
+         <enumeration value="GA"/>
+         <enumeration value="GB"/>
+         <enumeration value="GD"/>
+         <enumeration value="GE"/>
+         <enumeration value="GF"/>
+         <enumeration value="GG"/>
+         <enumeration value="GH"/>
+         <enumeration value="GI"/>
+         <enumeration value="GL"/>
+         <enumeration value="GM"/>
+         <enumeration value="GN"/>
+         <enumeration value="GP"/>
+         <enumeration value="GQ"/>
+         <enumeration value="GR"/>
+         <enumeration value="GS"/>
+         <enumeration value="GT"/>
+         <enumeration value="GU"/>
+         <enumeration value="GW"/>
+         <enumeration value="GY"/>
+         <enumeration value="HK"/>
+         <enumeration value="HM"/>
+         <enumeration value="HN"/>
+         <enumeration value="HR"/>
+         <enumeration value="HT"/>
+         <enumeration value="HU"/>
+         <enumeration value="ID"/>
+         <enumeration value="IE"/>
+         <enumeration value="IL"/>
+         <enumeration value="IM"/>
+         <enumeration value="IN"/>
+         <enumeration value="IO"/>
+         <enumeration value="IQ"/>
+         <enumeration value="IR"/>
+         <enumeration value="IS"/>
+         <enumeration value="IT"/>
+         <enumeration value="JE"/>
+         <enumeration value="JM"/>
+         <enumeration value="JO"/>
+         <enumeration value="JP"/>
+         <enumeration value="KE"/>
+         <enumeration value="KG"/>
+         <enumeration value="KH"/>
+         <enumeration value="KI"/>
+         <enumeration value="KM"/>
+         <enumeration value="KN"/>
+         <enumeration value="KP"/>
+         <enumeration value="KR"/>
+         <enumeration value="KW"/>
+         <enumeration value="KY"/>
+         <enumeration value="KZ"/>
+         <enumeration value="LA"/>
+         <enumeration value="LB"/>
+         <enumeration value="LC"/>
+         <enumeration value="LI"/>
+         <enumeration value="LK"/>
+         <enumeration value="LR"/>
+         <enumeration value="LS"/>
+         <enumeration value="LT"/>
+         <enumeration value="LU"/>
+         <enumeration value="LV"/>
+         <enumeration value="LY"/>
+         <enumeration value="MA"/>
+         <enumeration value="MC"/>
+         <enumeration value="MD"/>
+         <enumeration value="ME"/>
+         <enumeration value="MF"/>
+         <enumeration value="MG"/>
+         <enumeration value="MH"/>
+         <enumeration value="MK"/>
+         <enumeration value="ML"/>
+         <enumeration value="MM"/>
+         <enumeration value="MN"/>
+         <enumeration value="MO"/>
+         <enumeration value="MP"/>
+         <enumeration value="MQ"/>
+         <enumeration value="MR"/>
+         <enumeration value="MS"/>
+         <enumeration value="MT"/>
+         <enumeration value="MU"/>
+         <enumeration value="MV"/>
+         <enumeration value="MW"/>
+         <enumeration value="MX"/>
+         <enumeration value="MY"/>
+         <enumeration value="MZ"/>
+         <enumeration value="NA"/>
+         <enumeration value="NC"/>
+         <enumeration value="NE"/>
+         <enumeration value="NF"/>
+         <enumeration value="NG"/>
+         <enumeration value="NI"/>
+         <enumeration value="NL"/>
+         <enumeration value="NO"/>
+         <enumeration value="NP"/>
+         <enumeration value="NR"/>
+         <enumeration value="NU"/>
+         <enumeration value="NZ"/>
+         <enumeration value="OM"/>
+         <enumeration value="PA"/>
+         <enumeration value="PE"/>
+         <enumeration value="PF"/>
+         <enumeration value="PG"/>
+         <enumeration value="PH"/>
+         <enumeration value="PK"/>
+         <enumeration value="PL"/>
+         <enumeration value="PM"/>
+         <enumeration value="PN"/>
+         <enumeration value="PR"/>
+         <enumeration value="PS"/>
+         <enumeration value="PT"/>
+         <enumeration value="PW"/>
+         <enumeration value="PY"/>
+         <enumeration value="QA"/>
+         <enumeration value="RE"/>
+         <enumeration value="RO"/>
+         <enumeration value="RS"/>
+         <enumeration value="RU"/>
+         <enumeration value="RW"/>
+         <enumeration value="SA"/>
+         <enumeration value="SB"/>
+         <enumeration value="SC"/>
+         <enumeration value="SD"/>
+         <enumeration value="SE"/>
+         <enumeration value="SG"/>
+         <enumeration value="SH"/>
+         <enumeration value="SI"/>
+         <enumeration value="SJ"/>
+         <enumeration value="SK"/>
+         <enumeration value="SL"/>
+         <enumeration value="SM"/>
+         <enumeration value="SN"/>
+         <enumeration value="SO"/>
+         <enumeration value="SR"/>
+         <enumeration value="SS"/>
+         <enumeration value="ST"/>
+         <enumeration value="SV"/>
+         <enumeration value="SX"/>
+         <enumeration value="SY"/>
+         <enumeration value="SZ"/>
+         <enumeration value="TC"/>
+         <enumeration value="TD"/>
+         <enumeration value="TF"/>
+         <enumeration value="TG"/>
+         <enumeration value="TH"/>
+         <enumeration value="TJ"/>
+         <enumeration value="TK"/>
+         <enumeration value="TL"/>
+         <enumeration value="TM"/>
+         <enumeration value="TN"/>
+         <enumeration value="TO"/>
+         <enumeration value="TR"/>
+         <enumeration value="TT"/>
+         <enumeration value="TV"/>
+         <enumeration value="TW"/>
+         <enumeration value="TZ"/>
+         <enumeration value="UA"/>
+         <enumeration value="UG"/>
+         <enumeration value="UM"/>
+         <enumeration value="US"/>
+         <enumeration value="UY"/>
+         <enumeration value="UZ"/>
+         <enumeration value="VA"/>
+         <enumeration value="VC"/>
+         <enumeration value="VE"/>
+         <enumeration value="VG"/>
+         <enumeration value="VI"/>
+         <enumeration value="VN"/>
+         <enumeration value="VU"/>
+         <enumeration value="W1"/>
+         <enumeration value="WF"/>
+         <enumeration value="WS"/>
+         <enumeration value="XK"/>
+         <enumeration value="YE"/>
+         <enumeration value="YT"/>
+         <enumeration value="ZA"/>
+         <enumeration value="ZM"/>
+         <enumeration value="ZW"/>
+      </restriction>
+   </simpleType>
+   <complexType name="Form_24GLBADO_Type">
+      <annotation>
+         <documentation>A teljes nyomtatvány 24GLBADO részbiztonylatának szerkezetét leíró típus.</documentation>
+      </annotation>
+      <sequence>
+         <element name="Block_120050"
+                  type="tns:Block_24GLBADO_120050_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Azonosító adatok / Identification data</documentation>
+            </annotation>
+         </element>
+         <element name="Block_120102"
+                  type="tns:Block_24GLBADO_120102_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Kiegészítő adó és elismert belföldi kiegészítőadó-előleg kötelezettség / Top-up tax and qualified domestic minimum top-up tax advance payment</documentation>
+            </annotation>
+         </element>
+         <element name="Block_120123"
+                  type="tns:Block_24GLBADO_120123_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Önellenőrzés / Self-audit</documentation>
+            </annotation>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="Block_24GLBADO_120050_Type">
+      <annotation>
+         <documentation>Azonosító adatok / Identification data</documentation>
+      </annotation>
+      <all>
+         <element name="FieldGroup_120052"
+                  type="tns:FieldGroup_24GLBADO_120052_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Adózó adatai / Details of the taxpayer</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120056"
+                  type="tns:FieldGroup_24GLBADO_120056_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Ügyintéző adatai / Details of the administrator</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120077"
+                  type="tns:FieldGroup_24GLBADO_120077_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Bevallás jellemzői / Features of the tax return</documentation>
+            </annotation>
+         </element>
+         <element name="Chain_120104"
+                  type="tns:Chain_24GLBADO_120104_Type"
+                  minOccurs="0"
+                  meta:metaType="ChainMetaType">
+            <annotation>
+               <documentation>[ANYA] Végső anyavállalat(ok) adatai / Data of the ultimate parent entity/entities</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Block_24GLBADO_120102_Type">
+      <annotation>
+         <documentation>Kiegészítő adó és elismert belföldi kiegészítőadó-előleg kötelezettség / Top-up tax and qualified domestic minimum top-up tax advance payment</documentation>
+      </annotation>
+      <all>
+         <element name="FieldGroup_120141"
+                  type="tns:FieldGroup_24GLBADO_120141_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>[NY-1] Nyilatkozatok / Declarations</documentation>
+            </annotation>
+         </element>
+         <element name="Chain_120145"
+                  type="tns:Chain_24GLBADO_120145_Type"
+                  minOccurs="0"
+                  meta:metaType="ChainMetaType">
+            <annotation>
+               <documentation>[NY-2] Kizárt szervezet adatai / Data of the excluded entity</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120101"
+                  type="tns:FieldGroup_24GLBADO_120101_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>[OSSZ] Összesített adatok / Aggregated data</documentation>
+            </annotation>
+         </element>
+         <element name="Chain_120095"
+                  type="tns:Chain_24GLBADO_120095_Type"
+                  minOccurs="0"
+                  meta:metaType="ChainMetaType">
+            <annotation>
+               <documentation>[QDMTT-ELO] Elismert belföldi kiegészítőadó-előleg kötelezettség és mentességi nyilatkozatok / Qualified domestic minimum top-up tax advance payment and declarations of exemption</documentation>
+            </annotation>
+         </element>
+         <element name="Chain_120288"
+                  type="tns:Chain_24GLBADO_120288_Type"
+                  minOccurs="0"
+                  meta:metaType="ChainMetaType">
+            <annotation>
+               <documentation>[QDMTT-ELSZ-CS] Vállalatcsoport és az alcsoportok adatai / Data of the entity group and the subgroups</documentation>
+            </annotation>
+         </element>
+         <element name="Chain_120300"
+                  type="tns:Chain_24GLBADO_120300_Type"
+                  minOccurs="0"
+                  meta:metaType="ChainMetaType">
+            <annotation>
+               <documentation>[QDMTT-ELSZ-T] Elismert belföldi kiegészítőadó kötelezettség (QDMTT adó) és nyilatkozatok / Qualified domestic minimum top-up tax liability and declarations</documentation>
+            </annotation>
+         </element>
+         <element name="Chain_120274"
+                  type="tns:Chain_24GLBADO_120274_Type"
+                  minOccurs="0"
+                  meta:metaType="ChainMetaType">
+            <annotation>
+               <documentation>[IIR] IIR adókötelezettség és nyilatkozatok / IIR tax liability and declarations</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Block_24GLBADO_120123_Type">
+      <annotation>
+         <documentation>Önellenőrzés / Self-audit</documentation>
+      </annotation>
+      <all>
+         <element name="FieldGroup_120124"
+                  type="tns:FieldGroup_24GLBADO_120124_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Ismételt önellenőrzés jelölése / Mark repeated self-audit</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120182"
+                  type="tns:FieldGroup_24GLBADO_120182_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Magyar forintban bevallott kiegészítő adó összegének változása / Change in the amount of top-up tax declared in Hungarian forints (Adónemkód / Tax type code: 422)</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120183"
+                  type="tns:FieldGroup_24GLBADO_120183_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Euróban bevallott kiegészítő adó összegének változása / Change in the amount of top-up tax declared in Euro (Adónemkód / Tax type code: 496)</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120184"
+                  type="tns:FieldGroup_24GLBADO_120184_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Amerikai dollárban bevallott kiegészítő adó összegének változása / Change in the amount of top-up tax declared in US Dollars (Adónemkód / Tax type code: 497)</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120185"
+                  type="tns:FieldGroup_24GLBADO_120185_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Fizetendő önellenőrzési pótlék / Self-revision surcharge liability (Adónemkód / Tax type code: 215)</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Chain_24GLBADO_120104_Type">
+      <annotation>
+         <documentation>[ANYA] Végső anyavállalat(ok) adatai / Data of the ultimate parent entity/entities</documentation>
+      </annotation>
+      <sequence>
+         <element name="Chain_elem" minOccurs="0" maxOccurs="5994">
+            <annotation>
+               <documentation>Lánc ismétlődő elemei</documentation>
+            </annotation>
+            <complexType>
+               <sequence>
+                  <element name="FieldGroup_120092"
+                           type="tns:FieldGroup_24GLBADO_120092_Type"
+                           minOccurs="1"
+                           meta:metaType="FieldGroupMetaType">
+                     <annotation>
+                        <documentation>[ANYA] Végső anyavállalat(ok) adatai / Data of the ultimate parent entity/entities</documentation>
+                     </annotation>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="Chain_24GLBADO_120145_Type">
+      <annotation>
+         <documentation>[NY-2] Kizárt szervezet adatai / Data of the excluded entity</documentation>
+      </annotation>
+      <sequence>
+         <element name="Chain_elem" minOccurs="0" maxOccurs="14985">
+            <annotation>
+               <documentation>Lánc ismétlődő elemei</documentation>
+            </annotation>
+            <complexType>
+               <sequence>
+                  <element name="FieldGroup_120146"
+                           type="tns:FieldGroup_24GLBADO_120146_Type"
+                           minOccurs="1"
+                           meta:metaType="FieldGroupMetaType">
+                     <annotation>
+                        <documentation>[NY-2] Kizárt szervezet adatai / Data of the excluded entity</documentation>
+                     </annotation>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="Chain_24GLBADO_120095_Type">
+      <annotation>
+         <documentation>[QDMTT-ELO] Elismert belföldi kiegészítőadó-előleg kötelezettség és mentességi nyilatkozatok / Qualified domestic minimum top-up tax advance payment and declarations of exemption</documentation>
+      </annotation>
+      <sequence>
+         <element name="Chain_elem" minOccurs="0" maxOccurs="5994">
+            <annotation>
+               <documentation>Lánc ismétlődő elemei</documentation>
+            </annotation>
+            <complexType>
+               <sequence>
+                  <element name="FieldGroup_120096"
+                           type="tns:FieldGroup_24GLBADO_120096_Type"
+                           minOccurs="1"
+                           meta:metaType="FieldGroupMetaType">
+                     <annotation>
+                        <documentation>[QDMTT-ELO] Elismert belföldi kiegészítőadó-előleg kötelezettség és mentességi nyilatkozatok / Qualified domestic minimum top-up tax advance payment and declarations of exemption</documentation>
+                     </annotation>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="Chain_24GLBADO_120288_Type">
+      <annotation>
+         <documentation>[QDMTT-ELSZ-CS] Vállalatcsoport és az alcsoportok adatai / Data of the entity group and the subgroups</documentation>
+      </annotation>
+      <sequence>
+         <element name="Chain_elem" minOccurs="0" maxOccurs="999">
+            <annotation>
+               <documentation>Lánc ismétlődő elemei</documentation>
+            </annotation>
+            <complexType>
+               <sequence>
+                  <element name="FieldGroup_120296"
+                           type="tns:FieldGroup_24GLBADO_120296_Type"
+                           minOccurs="1"
+                           meta:metaType="FieldGroupMetaType">
+                     <annotation>
+                        <documentation>[QDMTT-ELSZ-CS] Vállalatcsoport és az alcsoportok adatai / Data of the entity group and the subgroups</documentation>
+                     </annotation>
+                  </element>
+                  <element name="Chain_120292"
+                           type="tns:Chain_24GLBADO_120292_Type"
+                           minOccurs="0"
+                           meta:metaType="ChainMetaType">
+                     <annotation>
+                        <documentation>[QDMTT-ELSZ-CS] Vállalatcsoport és az alcsoportok adatai / Data of the entity group and the subgroups</documentation>
+                     </annotation>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+      </sequence>
+      <attribute name="sdgID" use="required" fixed="120285"/>
+   </complexType>
+   <complexType name="Chain_24GLBADO_120292_Type">
+      <annotation>
+         <documentation>[QDMTT-ELSZ-CS] Vállalatcsoport és az alcsoportok adatai / Data of the entity group and the subgroups</documentation>
+      </annotation>
+      <sequence>
+         <element name="Chain_elem" minOccurs="0" maxOccurs="1">
+            <annotation>
+               <documentation>Lánc ismétlődő elemei</documentation>
+            </annotation>
+            <complexType>
+               <sequence>
+                  <element name="FieldGroup_120239"
+                           type="tns:FieldGroup_24GLBADO_120239_Type"
+                           minOccurs="1"
+                           meta:metaType="FieldGroupMetaType">
+                     <annotation>
+                        <documentation>[QDMTT-ELSZ-CS] Vállalatcsoport és az alcsoportok adatai / Data of the entity group and the subgroups</documentation>
+                     </annotation>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="Chain_24GLBADO_120300_Type">
+      <annotation>
+         <documentation>[QDMTT-ELSZ-T] Elismert belföldi kiegészítőadó kötelezettség (QDMTT adó) és nyilatkozatok / Qualified domestic minimum top-up tax liability and declarations</documentation>
+      </annotation>
+      <sequence>
+         <element name="Chain_elem" minOccurs="0" maxOccurs="9999">
+            <annotation>
+               <documentation>Lánc ismétlődő elemei</documentation>
+            </annotation>
+            <complexType>
+               <sequence>
+                  <element name="FieldGroup_120272"
+                           type="tns:FieldGroup_24GLBADO_120272_Type"
+                           minOccurs="1"
+                           meta:metaType="FieldGroupMetaType">
+                     <annotation>
+                        <documentation>[QDMTT-ELSZ-T] Elismert belföldi kiegészítőadó kötelezettség (QDMTT adó) és nyilatkozatok / Qualified domestic minimum top-up tax liability and declarations</documentation>
+                     </annotation>
+                  </element>
+                  <element name="Chain_120263"
+                           type="tns:Chain_24GLBADO_120263_Type"
+                           minOccurs="0"
+                           meta:metaType="ChainMetaType">
+                     <annotation>
+                        <documentation>[QDMTT-ELSZ-T] Csoporttagra vonatkozó további adatok / Additional data for the constituent entity</documentation>
+                     </annotation>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+      </sequence>
+      <attribute name="sdgID" use="required" fixed="120299"/>
+   </complexType>
+   <complexType name="Chain_24GLBADO_120263_Type">
+      <annotation>
+         <documentation>[QDMTT-ELSZ-T] Csoporttagra vonatkozó további adatok / Additional data for the constituent entity</documentation>
+      </annotation>
+      <sequence>
+         <element name="Chain_elem" minOccurs="0" maxOccurs="20">
+            <annotation>
+               <documentation>Lánc ismétlődő elemei</documentation>
+            </annotation>
+            <complexType>
+               <sequence>
+                  <element name="FieldGroup_120127"
+                           type="tns:FieldGroup_24GLBADO_120127_Type"
+                           minOccurs="1"
+                           meta:metaType="FieldGroupMetaType">
+                     <annotation>
+                        <documentation>[QDMTT-ELSZ-T] Csoporttagra vonatkozó további adatok / Additional data for the constituent entity</documentation>
+                     </annotation>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="Chain_24GLBADO_120274_Type">
+      <annotation>
+         <documentation>[IIR] IIR adókötelezettség és nyilatkozatok / IIR tax liability and declarations</documentation>
+      </annotation>
+      <sequence>
+         <element name="Chain_elem" minOccurs="0" maxOccurs="999">
+            <annotation>
+               <documentation>Lánc ismétlődő elemei</documentation>
+            </annotation>
+            <complexType>
+               <sequence>
+                  <element name="FieldGroup_120116"
+                           type="tns:FieldGroup_24GLBADO_120116_Type"
+                           minOccurs="1"
+                           meta:metaType="FieldGroupMetaType">
+                     <annotation>
+                        <documentation>[IIR] IIR adókötelezettség és nyilatkozatok / IIR tax liability and declarations</documentation>
+                     </annotation>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="FieldGroup_24GLBADO_120052_Type">
+      <annotation>
+         <documentation>Adózó adatai / Details of the taxpayer</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001C001A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adózó adószáma / Tax number of the taxpayer (adószám)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001C003A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Jogelőd adószáma / Tax number of the legal predecessor (jogelőd_adószám)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001C004A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adózó neve / Name of the taxpayer (adózó_név)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_24GLBADO_120056_Type">
+      <annotation>
+         <documentation>Ügyintéző adatai / Details of the administrator</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001C005A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Neve / Name (ügyintéző_neve)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001C006A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Telefonszáma / Phone number (ügyintéző_telefon)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="40"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_24GLBADO_120077_Type">
+      <annotation>
+         <documentation>Bevallás jellemzői / Features of the tax return</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001D001A"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Bevallási időszak / Reporting fiscal year ¦ Kezdete / Beginning (bev_időszak_kezdete)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D002A"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Bevallási időszak / Reporting fiscal year ¦ Vége / End (bev_időszak_vége)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D00506A"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Végső anyavállalat konszolidált beszámolója szerinti adóév / Fiscal year of the consolidated financial statement of the ultimate parent entity ¦ Kezdete / Beginning (bev_időszak_kezdete_Vanya)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D00507A"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Végső anyavállalat konszolidált beszámolója szerinti adóév / Fiscal year of the consolidated financial statement of the ultimate parent entity ¦ Vége / End (bev_időszak_vége_Vanya)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D00503A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Bevallás sorszáma / Serial number of the tax return (bevallás_sorszáma)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="3"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001C002A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Hibásnak minősített bevallás vonalkódja / Barcode of the tax return qualified as erroneous (vonalkód)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001D006A"
+                  minOccurs="0"
+                  type="tns:Enum_24GLBADO_0A0001D006A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Bevallás jellege / Type of the tax return (bev_jelleg)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D007A"
+                  minOccurs="0"
+                  type="tns:Enum_24GLBADO_0A0001D007A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Bevallás benyújtója / Declarant (benyújtó)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D00505A"
+                  minOccurs="0"
+                  type="tns:Enum_24GLBADO_0A0001D008A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Bevallás benyújtásának oka / Type of top-up tax (benyújtás_oka)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D008A"
+                  minOccurs="0"
+                  type="tns:Enum_24GLBADO_0A0001D008A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Nyilatkozatok a GloBE tv. 11. § (13) bekezdés c) és d) pontja alapján / Declarations pursuant to Section 11 (13) c) and d) of the GloBE Act (Főlap_nyilatkozatok)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D009A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Jelölje, ha a csoporttagokra ugyanazon mentességi ok áll fenn / Indicate if the same exemption reason applies to the constituent entities (egyforma_mentesség)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D003A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>ANYA (FlapANYA)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="4"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001D004A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>OSSZ (FlapOSSZ)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="4"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001D00508A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>NY-1 (FlapNY1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="4"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001D00532A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>NY-2 (FlapNY2)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="4"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001D005A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>ELO (FlapELO)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="4"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001D00546A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>ELSZ-CS (FlapELSZCS)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="4"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001D00510A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>ELSZ-T (FlapELSZT)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="4"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001D00511A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>IIR (FlapIIR)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="4"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001D00509A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>ONELL (FlapONELL)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="4"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_24GLBADO_120141_Type">
+      <annotation>
+         <documentation>[NY-1] Nyilatkozatok / Declarations</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0F0001C50337A"
+                  minOccurs="0"
+                  type="tns:Enum_24GLBADO_0F0001C50337A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Az elismert belföldi kiegészítő adóra (QDMTT adó) vonatkozó nyilatkozatok / Declarations related to the QDMTT ¦ 01. Az elismert belföldi kiegészítő adókötelezettség meghatározásánál alkalmazott pénzügyi számviteli standard / Financial accounting standard applied for determining the QDMTT liability ([NY1]A1)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0F0001C50354A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Az elismert belföldi kiegészítő adóra (QDMTT adó) vonatkozó nyilatkozatok / Declarations related to the QDMTT ¦ 02. Az alkalmazott számviteli standard megnevezése (amennyiben a 01. sorban a 3-as, egyéb értéket választotta) / Name of the applied accounting standard (if 3=Other was selected in the line 01) ([NY1]A2)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0F0001C50338A"
+                  minOccurs="0"
+                  type="tns:Enum_24GLBADO_GLBADO_deviza_1"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Az elismert belföldi kiegészítő adóra (QDMTT adó) vonatkozó nyilatkozatok / Declarations related to the QDMTT ¦ 03. A számviteli standard alapján készített beszámoló devizaneme / Currency of the financial statement prepared in accordance with the accounting standard ([NY1]A3)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0F0001C50504A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Az elismert belföldi kiegészítő adóra (QDMTT adó) vonatkozó nyilatkozatok / Declarations related to the QDMTT ¦ 04. Kérjük jelölje, ha a számviteli standart alapján készített beszámoló több devizanemben készült / Please indicate if the financial statement prepared in accordance with the accounting standard was prepared in multiple currencies ([NY1]A4)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0F0001C50421A"
+                  minOccurs="0"
+                  type="tns:Enum_24GLBADO_GLBADO_deviza_1"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Az elismert belföldi kiegészítő adóra (QDMTT adó) és a IIR adóra vonatkozó nyilatkozatok / Declarations related to the QDMTT and IIR tax ¦ 20. Összevont (konszolidált) beszámoló pénzneme / Currency of the consolidated financial statements ([NY1]A20)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0F0001C50420A"
+                  minOccurs="0"
+                  type="tns:Enum_24GLBADO_0A0001D007A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Az elismert belföldi kiegészítő adóra (QDMTT adó) és a IIR adóra vonatkozó nyilatkozatok / Declarations related to the QDMTT and IIR tax ¦ 21. Nyilatkozat a GloBE tv. 3. § 67. pontja alapján / Declaration pursuant to Section 3, Point 67 of the GloBE Act ([NY1]A21)</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_24GLBADO_120101_Type">
+      <annotation>
+         <documentation>[OSSZ] Összesített adatok / Aggregated data</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0C0001C0001AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>[OSSZ-QDMTT-ELO] Az elismert belföldi kiegészítőadó-előleg (QDMTT adóelőleg) összesített adatai devizanemenkénti bontásban / Aggregated data of qualified domestic minimum top-up tax advance payment, broken down by currency ¦ 01. A magyar forintban kitöltött QDMTT adóelőleg összesített adatai / Aggregated data of qualified domestic minimum top-up tax advance payment completed in Hungarian forints (Adónemkód / Tax type code: 422) ¦ Összeg / Amount ([OSSZ]A1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001C0001BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>[OSSZ-QDMTT-ELO] Az elismert belföldi kiegészítőadó-előleg (QDMTT adóelőleg) összesített adatai devizanemenkénti bontásban / Aggregated data of qualified domestic minimum top-up tax advance payment, broken down by currency ¦ 01. A magyar forintban kitöltött QDMTT adóelőleg összesített adatai / Aggregated data of qualified domestic minimum top-up tax advance payment completed in Hungarian forints (Adónemkód / Tax type code: 422) ¦ Adózók száma / Number of taxpayers ([OSSZ]B1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001C0002AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>[OSSZ-QDMTT-ELO] Az elismert belföldi kiegészítőadó-előleg (QDMTT adóelőleg) összesített adatai devizanemenkénti bontásban / Aggregated data of qualified domestic minimum top-up tax advance payment, broken down by currency ¦ 02. Az euroban kitöltött QDMTT adóelőleg összesített adatai / Aggregated data of qualified domestic minimum top-up tax advance payment completed in Euros (Adónemkód / Tax type code: 496) ¦ Összeg / Amount ([OSSZ]A2)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001C0002BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>[OSSZ-QDMTT-ELO] Az elismert belföldi kiegészítőadó-előleg (QDMTT adóelőleg) összesített adatai devizanemenkénti bontásban / Aggregated data of qualified domestic minimum top-up tax advance payment, broken down by currency ¦ 02. Az euroban kitöltött QDMTT adóelőleg összesített adatai / Aggregated data of qualified domestic minimum top-up tax advance payment completed in Euros (Adónemkód / Tax type code: 496) ¦ Adózók száma / Number of taxpayers ([OSSZ]B2)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001C0003AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>[OSSZ-QDMTT-ELO] Az elismert belföldi kiegészítőadó-előleg (QDMTT adóelőleg) összesített adatai devizanemenkénti bontásban / Aggregated data of qualified domestic minimum top-up tax advance payment, broken down by currency ¦ 03. Az amerikai dollárban kitöltött QDMTT adóelőleg összesített adatai / Aggregated data of qualified domestic minimum top-up tax advance payment completed in US dollars (Adónemkód / Tax type code: 497) ¦ Összeg / Amount ([OSSZ]A3)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001C0003BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>[OSSZ-QDMTT-ELO] Az elismert belföldi kiegészítőadó-előleg (QDMTT adóelőleg) összesített adatai devizanemenkénti bontásban / Aggregated data of qualified domestic minimum top-up tax advance payment, broken down by currency ¦ 03. Az amerikai dollárban kitöltött QDMTT adóelőleg összesített adatai / Aggregated data of qualified domestic minimum top-up tax advance payment completed in US dollars (Adónemkód / Tax type code: 497) ¦ Adózók száma / Number of taxpayers ([OSSZ]B3)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001D50000A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>[OSSZ-QDMTT-ELSZ] Az elismert belföldi kiegészítőadó (QDMTT adó) összesített adatai devizanemenkénti bontásban / Aggregated data of qualified domestic minimum top-up tax (QDMTT), broken down by currency ¦ 11. A magyar forintban kitöltött QDMTT adó összesített adatai / Aggregated data of qualified domestic minimum top-up tax completed in Hungarian forints (Adónemkód / Tax type code: 422) ¦ Összeg / Amount ([OSSZ]A11)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001D50001A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>[OSSZ-QDMTT-ELSZ] Az elismert belföldi kiegészítőadó (QDMTT adó) összesített adatai devizanemenkénti bontásban / Aggregated data of qualified domestic minimum top-up tax (QDMTT), broken down by currency ¦ 11. A magyar forintban kitöltött QDMTT adó összesített adatai / Aggregated data of qualified domestic minimum top-up tax completed in Hungarian forints (Adónemkód / Tax type code: 422) ¦ Adózók száma / Number of taxpayers ([OSSZ]B11)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001D50002A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>[OSSZ-QDMTT-ELSZ] Az elismert belföldi kiegészítőadó (QDMTT adó) összesített adatai devizanemenkénti bontásban / Aggregated data of qualified domestic minimum top-up tax (QDMTT), broken down by currency ¦ 12. Az euroban kitöltött QDMTT adó összesített adatai / Aggregated data of qualified domestic minimum top-up tax tax completed in Euros (Adónemkód / Tax type code: 496) ¦ Összeg / Amount ([OSSZ]A12)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001D50003A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>[OSSZ-QDMTT-ELSZ] Az elismert belföldi kiegészítőadó (QDMTT adó) összesített adatai devizanemenkénti bontásban / Aggregated data of qualified domestic minimum top-up tax (QDMTT), broken down by currency ¦ 12. Az euroban kitöltött QDMTT adó összesített adatai / Aggregated data of qualified domestic minimum top-up tax tax completed in Euros (Adónemkód / Tax type code: 496) ¦ Adózók száma / Number of taxpayers ([OSSZ]B12)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001D50004A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>[OSSZ-QDMTT-ELSZ] Az elismert belföldi kiegészítőadó (QDMTT adó) összesített adatai devizanemenkénti bontásban / Aggregated data of qualified domestic minimum top-up tax (QDMTT), broken down by currency ¦ 13. Az amerikai dollárban kitöltött QDMTT adó összesített adatai / Aggregated data of qualified domestic minimum top-up tax completed in US dollars (Adónemkód / Tax type code: 497) ¦ Összeg / Amount ([OSSZ]A13)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001D50005A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>[OSSZ-QDMTT-ELSZ] Az elismert belföldi kiegészítőadó (QDMTT adó) összesített adatai devizanemenkénti bontásban / Aggregated data of qualified domestic minimum top-up tax (QDMTT), broken down by currency ¦ 13. Az amerikai dollárban kitöltött QDMTT adó összesített adatai / Aggregated data of qualified domestic minimum top-up tax completed in US dollars (Adónemkód / Tax type code: 497) ¦ Adózók száma / Number of taxpayers ([OSSZ]B13)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001E50006A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>[OSSZ-IIR] Az IIR adó összesített adatai devizanemenkénti bontásban / Aggregated data of IIR tax, broken down by currency ¦ 21. A magyar forintban kitöltött IIR adó összesített adatai / Aggregated data of IIR tax completed in Hungarian forints (Adónemkód / Tax type code: 422) ¦ Összeg / Amount ([OSSZ]A21)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001E50007A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>[OSSZ-IIR] Az IIR adó összesített adatai devizanemenkénti bontásban / Aggregated data of IIR tax, broken down by currency ¦ 21. A magyar forintban kitöltött IIR adó összesített adatai / Aggregated data of IIR tax completed in Hungarian forints (Adónemkód / Tax type code: 422) ¦ Adózók száma / Number of taxpayers ([OSSZ]B21)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001E50008A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>[OSSZ-IIR] Az IIR adó összesített adatai devizanemenkénti bontásban / Aggregated data of IIR tax, broken down by currency ¦ 22. Az euroban kitöltött IIR adó összesített adatai / Aggregated data of IIR tax completed in Euros (Adónemkód / Tax type code: 496) ¦ Összeg / Amount ([OSSZ]A22)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001E50009A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>[OSSZ-IIR] Az IIR adó összesített adatai devizanemenkénti bontásban / Aggregated data of IIR tax, broken down by currency ¦ 22. Az euroban kitöltött IIR adó összesített adatai / Aggregated data of IIR tax completed in Euros (Adónemkód / Tax type code: 496) ¦ Adózók száma / Number of taxpayers ([OSSZ]B22)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001E50010A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>[OSSZ-IIR] Az IIR adó összesített adatai devizanemenkénti bontásban / Aggregated data of IIR tax, broken down by currency ¦ 23. Az amerikai dollárban kitöltött IIR adó összesített adatai / Aggregated data of IIR tax completed in US dollars (Adónemkód / Tax type code: 497) ¦ Összeg / Amount ([OSSZ]A23)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001E50011A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>[OSSZ-IIR] Az IIR adó összesített adatai devizanemenkénti bontásban / Aggregated data of IIR tax, broken down by currency ¦ 23. Az amerikai dollárban kitöltött IIR adó összesített adatai / Aggregated data of IIR tax completed in US dollars (Adónemkód / Tax type code: 497) ¦ Adózók száma / Number of taxpayers ([OSSZ]B23)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_24GLBADO_120124_Type">
+      <annotation>
+         <documentation>Ismételt önellenőrzés jelölése / Mark repeated self-audit</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0K0001C00541A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Jelölje, ha a bevallása ismételt önellenőrzésnek minősül (ism_önell)</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_24GLBADO_120182_Type">
+      <annotation>
+         <documentation>Magyar forintban bevallott kiegészítő adó összegének változása / Change in the amount of top-up tax declared in Hungarian forints (Adónemkód / Tax type code: 422)</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0K0001D50465A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Eredeti adó összege / Original tax amount ([ONELL]A1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9+-]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0K0001D50456A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Módosított adó összege / Revised tax amount ([ONELL]B1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0K0001D50445A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adókötelezettség változása / Change in tax liability (+/-) ([ONELL]C1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="21"/>
+                  <pattern value="[0-9+-]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0K0001D50450A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Az önellenőrzési pótlék alapja / The base of the self-revision surcharge ([ONELL]D1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0K0001D50443A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Fizetendő önellenőrzési pótlék összege / Amount of the self-revision surcharge payable ([ONELL]E1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_24GLBADO_120183_Type">
+      <annotation>
+         <documentation>Euróban bevallott kiegészítő adó összegének változása / Change in the amount of top-up tax declared in Euro (Adónemkód / Tax type code: 496)</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0K0001D50470A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Eredeti adó összege / Original tax amount ([ONELL]A2)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9+-]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0K0001D50457A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Módosított adó összege / Revised tax amount ([ONELL]B2)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0K0001D50466A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adókötelezettség változása / Change in tax liability (+/-) ([ONELL]C2)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="21"/>
+                  <pattern value="[0-9+-]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0K0001D50467A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Az önellenőrzési pótlék alapja / The base of the self-revision surcharge ([ONELL]D2)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0K0001D50468A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Fizetendő önellenőrzési pótlék összege / Amount of the self-revision surcharge payable ([ONELL]E2)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_24GLBADO_120184_Type">
+      <annotation>
+         <documentation>Amerikai dollárban bevallott kiegészítő adó összegének változása / Change in the amount of top-up tax declared in US Dollars (Adónemkód / Tax type code: 497)</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0K0001D50469A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Eredeti adó összege / Original tax amount ([ONELL]A3)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9+-]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0K0001D50455A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Módosított adó összege / Revised tax amount ([ONELL]B3)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0K0001D50441A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adókötelezettség változása / Change in tax liability (+/-) ([ONELL]C3)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="21"/>
+                  <pattern value="[0-9+-]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0K0001D50451A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Az önellenőrzési pótlék alapja / The base of the self-revision surcharge ([ONELL]D3)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0K0001D50452A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Fizetendő önellenőrzési pótlék összege / Amount of the self-revision surcharge payable ([ONELL]E3)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_24GLBADO_120185_Type">
+      <annotation>
+         <documentation>Fizetendő önellenőrzési pótlék / Self-revision surcharge liability (Adónemkód / Tax type code: 215)</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0K0001D50453A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Fizetendő önellenőrzési pótlék teljes összege / Total Amount of the payable self-revisison surcharge (+/-) ([ONELL]E10)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="21"/>
+                  <pattern value="[0-9+-]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_24GLBADO_120092_Type">
+      <annotation>
+         <documentation>[ANYA] Végső anyavállalat(ok) adatai / Data of the ultimate parent entity/entities</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0BXXXXC0001AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adószám / Tax number ([ANYA]A1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0BXXXXC0001BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Név / Name ([ANYA]B1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0BXXXXC50182A"
+                  minOccurs="0"
+                  type="tns:Enum_24GLBADO_GLOBE_1"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Országkód / Country code ([ANYA]C1)</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_24GLBADO_120146_Type">
+      <annotation>
+         <documentation>[NY-2] Kizárt szervezet adatai / Data of the excluded entity</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0GXXXXC50283A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adószám / Tax number ([NY2]A1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0GXXXXC50282A"
+                  minOccurs="0"
+                  type="tns:Enum_24GLBADO_GLOBE_1"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Országkód / Country code ([NY2]B1)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0GXXXXC50281A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Megnevezés / Name ([NY2]C1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_24GLBADO_120096_Type">
+      <annotation>
+         <documentation>[QDMTT-ELO] Elismert belföldi kiegészítőadó-előleg kötelezettség és mentességi nyilatkozatok / Qualified domestic minimum top-up tax advance payment and declarations of exemption</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0DXXXXC0001BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Csoporttag adószáma / Tax number of the constituent entity ([ELO]B1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0DXXXXC0001AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Csoporttag megnevezése / Name of the constituent entity ([ELO]A1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0DXXXXC0001CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Csoporttag által fizetendő elismert belföldi kiegészítőadó-előleg / Qualified domestic minimum top-up tax advance payable by the constituent entity ([ELO]C1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0DXXXXC0001DA"
+                  minOccurs="0"
+                  type="tns:Enum_24GLBADO_29927"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Előleg pénzneme / Currency of the advance payment ([ELO]D1)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0DXXXXC0001EA"
+                  minOccurs="0"
+                  type="tns:Enum_24GLBADO_29928"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Mentességi nyilatkozat / Declaration of exemption ([ELO]E1)</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_24GLBADO_120296_Type">
+      <annotation>
+         <documentation>[QDMTT-ELSZ-CS] Vállalatcsoport és az alcsoportok adatai / Data of the entity group and the subgroups</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0HXXXXC50484A"
+                  minOccurs="0"
+                  type="tns:Enum_24GLBADO_0HXXXXC50484A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Jelölje, ha a vállalatcsoporton belül külön alcsoportba nem tartozó csoporttagokat kíván feltüntetni / Indicate if you wish to list constituent entities that do not belong to a separate subgroup within the entity group ([ELSZ_CS]A1)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0HXXXXC50487A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Alcsoport megnevezése / Subgroup name ([ELSZ_CS]A2)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_24GLBADO_120239_Type">
+      <annotation>
+         <documentation>[QDMTT-ELSZ-CS] Vállalatcsoport és az alcsoportok adatai / Data of the entity group and the subgroups</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0HXXXXC50485A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Tényleges adómérték (%) / Effective tax rate ([ELSZ_CS]A4)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="7"/>
+                  <pattern value="[0-9,.]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0HXXXXC50488A"
+                  minOccurs="0"
+                  type="tns:Enum_24GLBADO_29928"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Mentességi nyilatkozat / Declaration of exemption ([ELSZ_CS]A8)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0HXXXXC50486A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Nyilatkozat a 4/2026. (I.26.) NGM rendelet 4. § (1) bekezdés f) és g) pontja alapján / Declaration pursuant to Section 4 (1) f) and g) of Decree 4/2026. (I.26.) of the Ministry for National Economy ([ELSZ_CS]A5)</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_24GLBADO_120272_Type">
+      <annotation>
+         <documentation>[QDMTT-ELSZ-T] Elismert belföldi kiegészítőadó kötelezettség (QDMTT adó) és nyilatkozatok / Qualified domestic minimum top-up tax liability and declarations</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0IXXXXC50481A"
+                  minOccurs="0"
+                  type="tns:Enum_24GLBADO_0HXXXXC50484A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Jelölje, ha a vállalatcsoporton belül külön alcsoportba nem tartozó csoporttagokat kíván feltüntetni / Indicate if you wish to list constituent entities that do not belong to a separate subgroup within the entity group ([ELSZ_T]A1)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0IXXXXC50480A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Alcsoport megnevezése / Subgroup name ([ELSZ_T]A2)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_24GLBADO_120127_Type">
+      <annotation>
+         <documentation>[QDMTT-ELSZ-T] Csoporttagra vonatkozó további adatok / Additional data for the constituent entity</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0IXXXXD50493A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Csoporttag adószáma / Tax number of the constituent entity ([ELSZ_T]A13)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0IXXXXD50490A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Csoporttag megnevezése / Name of the constituent entity ([ELSZ_T]A12)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0IXXXXD50482A"
+                  minOccurs="0"
+                  type="tns:Enum_24GLBADO_0IXXXXD50482A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Csoporttag típusa / Type of Constituent entity ([ELSZ_T]A10)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0IXXXXD50483A"
+                  minOccurs="0"
+                  type="tns:Enum_24GLBADO_0A0001D008A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Csoporttag státusza / Constituent entity status ([ELSZ_T]A11)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0IXXXXD50497A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Csoporttag közösségi adószáma / EU Tax ID of the constituent entity ([ELSZ_T]A14)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="8"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0IXXXXD50494A"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Csoporttag adóévének kezdete / Start of the constituent entity´s fiscal year ([ELSZ_T]A16)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0IXXXXD50495A"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Csoporttag adóévének vége / End of constituent entity´s fiscal year´ ([ELSZ_T]A17)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0IXXXXD50478A"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Csoporttagra vonatkozó QDMTT adó számítási időszakának kezdete / Start of the relevant QMDTT tax calculation period for constituent entity ([ELSZ_T]A18)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0IXXXXD50479A"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Csoporttagra vonatkozó QDMTT adó számítási időszakának vége / End of the relevant QMDTT tax calculation period for constituent entity ([ELSZ_T]A19)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0IXXXXD50492A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Elismert belföldi kiegészítőadó összege / Amount of the qualified domestic minimum top-up tax ([ELSZ_T]A22)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0IXXXXD50491A"
+                  minOccurs="0"
+                  type="tns:Enum_24GLBADO_29927"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Elismert belföldi kiegészítő adó pénzneme / Currency of the qualified domestic top-up tax ([ELSZ_T]A23)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0IXXXXD50499A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Csoporttag által bevallott és megfizetett elismert belföldi kiegészítőadó-előleg összege / Amount of the qualified domestic top-up tax advance declared and paid by the constituent entity ([ELSZ_T]A24)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0IXXXXD50498A"
+                  minOccurs="0"
+                  type="tns:Enum_24GLBADO_29927"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Csoporttag által bevallott és megfizetett elismert belföldi kiegészítőadó-előleg pénzneme / Currency of the qualified domestic top-up tax advance declared and paid by the constituent entity ([ELSZ_T]A25)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0IXXXXD50496A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Globe tv . nyilatkozatok / Declarations ¦ 11. § (13) bekezdés a) pont / Section 11 (13) a) ([ELSZ_T]A31)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0IXXXXD50500A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Globe tv . nyilatkozatok / Declarations ¦ 11. § (13) bekezdés b) pont / Section 11 (13) b) ([ELSZ_T]A32)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0IXXXXD50501A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Globe tv . nyilatkozatok / Declarations ¦ 28. § (1) bekezdés / Section 28 (1) ([ELSZ_T]A33)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0IXXXXD50502A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Globe tv . nyilatkozatok / Declarations ¦ 15. § (2) bekezdés a) pont / Section 15 (2) a) ([ELSZ_T]A34)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0IXXXXD50503A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Globe tv . nyilatkozatok / Declarations ¦ 15. § (2) bekezdés b), c) pont / Section 15 (2) b) c) ([ELSZ_T]A35)</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_24GLBADO_120116_Type">
+      <annotation>
+         <documentation>[IIR] IIR adókötelezettség és nyilatkozatok / IIR tax liability and declarations</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0JXXXXC50440A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Anyavállalat adószáma / Tax number of the parent entity ([IIR]A2)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0JXXXXC50446A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Anyavállalat megnevezése / Name of the parent entity ([IIR]A1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0JXXXXC50447A"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Anyavállalat adóévének kezdete / Start of the parent entity’s fiscal year ([IIR]A3)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0JXXXXC50448A"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Anyavállalat adóévének vége / End of the parent entity’s fiscal year ([IIR]A4)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0JXXXXC50444A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>IIR adó összege / Amount of IIR tax ([IIR]A5)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0JXXXXC50442A"
+                  minOccurs="0"
+                  type="tns:Enum_24GLBADO_29927"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>IIR adó pénzneme / Currency of IIR tax ([IIR]A6)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0JXXXXC50449A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Nyilatkozat a 4/2026. (1.26.) NGM rendelet 4. § (1) bekezdés f) és g) pontja alapján / Declaration pursuant to Section 4 (1) f) and g) of Decree 4/2026. (I.26.) of the Ministry for National Economy ([IIR]A7)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0JXXXXC50454A"
+                  minOccurs="0"
+                  type="tns:Enum_24GLBADO_29928"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Mentességi nyilatkozat / Declaration of exemption ([IIR]A8)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0JXXXXC50430A"
+                  minOccurs="0"
+                  type="tns:Enum_24GLBADO_0A0001D008A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Anyavállalat státusza / Status of the parent entity ([IIR]A9)</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+</schema>
